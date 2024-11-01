@@ -1,0 +1,35 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    margin: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    background-color: lightblue;
+    width: 50%; /* To make it center */
+    margin: auto; /* To make it center */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form button {
+    display: flex; /* To make the button center vertical */
+    margin: auto; /* To make the button center */
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    justify-content: center;
+}
