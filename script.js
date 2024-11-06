@@ -22,16 +22,25 @@ function displaySwitchCase(){
 
 // if-else.html
 function displayIfElse(){
-    const ifelse = document.getElementById("inputifelse");
+    const ifelse = document.getElementById("inputifelse").value;
     let displayifelsemessage;
 
-    if (ifelse >= 18) {
-        displayifelsemessage = "Party approve!";
-    } else if (ifelse >= 16) {
-        displayifelsemessage = "Are you trying to fool me?!";
+    if(ifelse <= 12){
+        displayifelsemessage = "You're still young, go, play outside";
+    } else if(ifelse <= 17){
+        displayifelsemessage = "Are you trying to fool me?";
     } else {
-        displayifelsemessage = "You're young yet, go play!";
+        displayifelsemessage = "Party Approve!";
     }
 
     document.getElementById("outputifelse").textContent = displayifelsemessage;
+}
+
+function displayTernary(){
+    var ternary = document.getElementById("inputternary").value;
+    let displayTernaryMessage;
+
+    displayTernaryMessage = (ternary == 1) ? true : false;
+
+    document.getElementById("outputTernary").innerHTML = displayTernaryMessage;
 }
